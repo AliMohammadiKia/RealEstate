@@ -13,7 +13,7 @@ const property = ({
   externalID,
 }) => {
   return `
-    <a href=${`property.html?id=${externalID}`} class="cursor-pointer">
+    <a href=${`./src/property.html?id=${externalID}`} class="cursor-pointer">
       <div class="w-full h-60 mb-2">
         <img src="${
           coverPhoto ? coverPhoto.url : defaultImage
