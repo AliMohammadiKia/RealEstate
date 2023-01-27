@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .menu__item {
+    @apply border-b-2 border-transparent hover:border-indigo-400 cursor-pointer transition-all;
+  }
+  .menu__item.active {
+    @apply text-indigo-600 border-indigo-400;
+  }
+  .menu__btn {
+    @apply py-2 px-4 bg-indigo-100 rounded-md text-indigo-600 shadow-sm hover:bg-indigo-400 hover:text-white hover:shadow-md transition-all;
+  }
+
+  .show__more {
+    @apply flex items-center text-blue-600 cursor-pointer;
+  }
+  .show__more:hover i {
+    @apply mr-2;
+  }
+}
