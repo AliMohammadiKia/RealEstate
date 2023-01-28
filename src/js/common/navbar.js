@@ -7,20 +7,20 @@ const navbar = (src = true) => {
           RealEstate
         </a>
         <ul class="flex space-x-5">
-          <li class="menu__item active">
+          <li class="menu__item" id="menu_home">
             <a href=${src ? "../index.html" : "./index.html"}>Home</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item" id="menu_search">
             <a href=${src ? "./search.html" : "./src/search.html"}>Search</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item" id="menu_rent">
             <a href=${
               src
                 ? "./search.html?purpose=for-rent"
                 : "./src/search.html?purpose=for-rent"
             }>Rent Estate</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item" id="menu_sale">
             <a href=${
               src
                 ? "./search.html?purpose=for-sale"
