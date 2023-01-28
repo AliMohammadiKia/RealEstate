@@ -1,9 +1,15 @@
 import { fetchApi } from "./common/fetchApi.js";
 import { loading, removeLoading } from "./common/loading.js";
 import property from "./common/property.js";
+import navbar from "./common/navbar.js";
 
 const rentEstateContainer = document.querySelector("#rent_estate_container");
 const buyEstateContainer = document.querySelector("#buy_estate_container");
+const header = document.querySelector("header");
+
+const renderNavbar = () => {
+  header.innerHTML = navbar(false);
+};
 
 const renderData = () => {
   fetchData("rent", rentEstateContainer);
@@ -22,4 +28,5 @@ const fetchData = async (type, container) => {
   removeLoading();
 };
 
+renderNavbar();
 window.addEventListener("DOMContentLoaded", renderData);
