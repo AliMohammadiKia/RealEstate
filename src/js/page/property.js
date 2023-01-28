@@ -1,6 +1,6 @@
-import { fetchApi } from "./common/fetchApi.js";
-import { loading, removeLoading } from "./common/loading.js";
-import propertyDetail from "./common/propertyDetail.js";
+import { fetchApi } from "../common/fetchApi.js";
+import { loading, removeLoading } from "../common/loading.js";
+import propertyDetail from "../common/propertyDetail.js";
 
 const id = new URL(document.location).searchParams.get("id");
 const container = document.querySelector("#container");
