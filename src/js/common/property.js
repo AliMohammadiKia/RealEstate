@@ -1,19 +1,24 @@
 const defaultImage = "../../img/house.jpg";
 
-const property = ({
-  coverPhoto,
-  price,
-  rentFrequency,
-  rooms,
-  title,
-  baths,
-  area,
-  agency,
-  isVerified,
-  externalID,
-}) => {
+const property = (
+  {
+    coverPhoto,
+    price,
+    rentFrequency,
+    rooms,
+    title,
+    baths,
+    area,
+    agency,
+    isVerified,
+    externalID,
+  },
+  src = true
+) => {
   return `
-    <a href=${`./src/property.html?id=${externalID}`} class="cursor-pointer">
+    <a href=${`${
+      src ? "./src/" : "../src/"
+    }property.html?id=${externalID}`} class="cursor-pointer">
       <div class="w-full h-60 mb-2">
         <img src="${
           coverPhoto ? coverPhoto.url : defaultImage

@@ -26,13 +26,13 @@
             <a href="./index.html">Home</a>
           </li>
           <li class="menu__item">
-            <a href="./src/about.html">About</a>
+            <a href="./src/search.html">Search</a>
           </li>
           <li class="menu__item">
-            <a href="./src/rent-estate.html">Rent Estate</a>
+            <a href="./src/search.html?purpose=for-rent">Rent Estate</a>
           </li>
           <li class="menu__item">
-            <a href="./src/buy-estate.html">Buy Estate</a>
+            <a href="./src/search.html?purpose=for-sale">Buy Estate</a>
           </li>
         </ul>
         <div class="flex space-x-2">
@@ -48,10 +48,10 @@
           class="flex justify-between items-center border-b-2 border-indigo-200 mb-4"
         >
           <p class="text-lg text-slate-600">Rent Estate</p>
-          <div class="show__more">
+          <a class="show__more" href="./src/search.html?purpose=for-rent">
             <p>show more</p>
             <i class="fa-solid fa-arrow-right ml-1 mt-1 transition-all"></i>
-          </div>
+          </a>
         </div>
         <div
           id="rent_estate_container"
@@ -63,10 +63,13 @@
           class="flex justify-between items-center border-b-2 border-indigo-200 mb-4"
         >
           <p class="text-lg text-slate-600">Buy Estate</p>
-          <div class="show__more">
+          <a
+            class="show__more"
+            href="./src/search.html?purpose=for-sale&felan=test"
+          >
             <p>show more</p>
             <i class="fa-solid fa-arrow-right ml-1 mt-1 transition-all"></i>
-          </div>
+          </a>
         </div>
         <div
           id="buy_estate_container"
