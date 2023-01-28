@@ -14,7 +14,7 @@
   }
 
   .show__more {
-    @apply flex items-center text-blue-600 cursor-pointer;
+    @apply flex items-center text-blue-600;
   }
   .show__more:hover i {
     @apply mr-2;

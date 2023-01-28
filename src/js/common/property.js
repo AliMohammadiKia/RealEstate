@@ -37,7 +37,7 @@ const property = (
           </div>
           ${
             agency.logo &&
-            `<div class="w-8 h-4 rounded-md overflow-hidden">
+            `<div class="w-2 h-2 md:w-8 md:h-4 rounded-md overflow-hidden">
               <img src="${agency.logo.url}" alt="" class="w-full h-full" />
           </div>`
           }

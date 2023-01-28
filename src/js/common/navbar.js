@@ -1,6 +1,6 @@
 const navbar = (src = true) => {
   return `
-      <menu class="flex justify-between items-center">
+      <menu class="flex flex-col space-y-5 text-sm md:text-base md:flex-row md:space-y-0 justify-between items-center">
         <a href=${
           src ? "../index.html" : "./index.html"
         } class="text-xl font-bold text-indigo-400">

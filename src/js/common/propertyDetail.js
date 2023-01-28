@@ -17,10 +17,9 @@ const propertyDetail = ({
   photos,
 }) => {
   // imageSlider(photos);
-  console.log(amenities);
   return `
-    <div class="px-60">
-      <div class="w-full h-[500px] mb-2 px-4">
+    <div class="px-2 xl:px-60">
+      <div class="w-full h-48 md:h-80 xl:h-[500px] mb-2 xl:px-4">
         <img src="${
           photos ? photos[0].url : defaultImage
         }" alt="" class="bg-cover w-full h-full" />
@@ -29,9 +28,9 @@ const propertyDetail = ({
         <div class="flex items-center">
           ${
             isVerified &&
-            "<i class='fa-solid fa-circle-check text-green-400 text-xl mr-2'></i>"
+            "<i class='fa-solid fa-circle-check text-green-400 xl:text-xl mr-2'></i>"
           }
-          <p class="text-xl text-slate-600">
+          <p class="xl:text-xl text-slate-600">
             AED ${price}${rentFrequency !== null ? `/${rentFrequency}` : ""}
           </p>
         </div>
@@ -50,7 +49,7 @@ const propertyDetail = ({
         </p>
       </div>
       <div>
-        <p class="text-lg font-bold my-5">${title}</p>
+        <p class="md:text-lg font-bold my-5">${title}</p>
         <p>${description}</p>
       </div>
       <div class="flex justify-between my-5">
@@ -62,11 +61,11 @@ const propertyDetail = ({
         }
       </div>
       <div class="mt-5">
-        ${amenities.length && '<p class="font-bold text-2xl">Facilities</p>'}
+        ${amenities.length && '<p class="md:font-bold text-2xl">Facilities</p>'}
         <div class="flex flex-wrap space-x-2 space-y-2 items-baseline mt-2">
           ${amenities.map((item) => {
             return item.amenities.map((amenity) => {
-              return `<p class="text-blue-400 font-bold bg-blue-100 py-1 px-4 rounded-md">${amenity.text}</p>`;
+              return `<p class="text-blue-400 md:font-bold bg-blue-100 py-1 px-4 rounded-md">${amenity.text}</p>`;
             });
           })}
         </div>

@@ -1,5 +1,5 @@
 const baseUrl = "https://bayut.p.rapidapi.com/";
-const apiKey = "ccef6bfd5cmsh1f8739ea5577b24p153bc2jsnf4de30dffb78";
+const apiKey = "f32e57abfamsh63eea3f0c2844f3p167155jsnbac6af7ebe2c";
 
 export const fetchApi = async (url) => {
   const response = await fetch(baseUrl + url, {
